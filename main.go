@@ -86,7 +86,7 @@ func main() {
 		json.NewEncoder(w).Encode(data)
 	})
 
-	log.Println("Server listening on http://localhost:8081")
+	log.Println("Server listening on http://localhost:8081") // Listening from 8081 host
 	if err := http.ListenAndServe(":8081", nil); err != nil {
 		log.Fatal("Server failed:", err)
 	}
